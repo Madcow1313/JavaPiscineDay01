@@ -3,7 +3,7 @@ public class User {
     private String name;
     private Integer balance;
 
-    public User(Integer identifier, String name, Integer balance){
+    public User(String name, Integer balance){
         this.identifier = UserIdsGenerator.getInstance().generateId();
         this.name = name;
         if (balance > 0)
@@ -14,10 +14,6 @@ public class User {
 
     public Integer getIdentifier() {
         return identifier;
-    }
-
-    public void setIdentifier(Integer identifier) {
-        this.identifier = identifier;
     }
 
     public Integer getBalance() {
