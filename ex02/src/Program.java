@@ -16,5 +16,9 @@ public class Program {
             arrayList.getUserById(-1);
         }
         catch (UserNotFoundException e){}
+        try {
+            arrayList.getUserByIndex(-1);
+        }
+        catch (UserNotFoundException e){}
     }
 }

@@ -24,13 +24,13 @@ public class UsersArrayList implements UsersList {
             if (users[i].getIdentifier() == id)
                 return users[i];
         }
-        throw new UserNotFoundException("User with " + id + " not found");
+        throw new UserNotFoundException("User with id " + id + " not found");
     }
 
     @Override
     public User getUserByIndex(int index) {
         if (index > size || index < 0)
-            throw new UserNotFoundException("User with " + index + " not found");
+            throw new UserNotFoundException("User with index " + index + " not found");
         return users[index];
     }
 
